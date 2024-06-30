@@ -1,0 +1,136 @@
+:root {
+  --text-font-1: "M PLUS 1 Code", monospace;
+  --bg-clr: #23424a;
+  --sub-bg-clr: #136c72;
+  --sub-header-clr: #87629a;
+  --btn-text-clr: #3a3a3a;
+  --btn-bg-clr: #38cfd9;
+  --text-clr: #fff;
+}
+
+div.container {
+  margin-inline: auto;
+  margin-top: 6rem;
+  border: 2px solid var(--bg-clr);
+  width: 90%;
+
+  div.top_section {
+    background-color: var(--bg-clr);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+    div.content {
+      max-width: 60%;
+      width: 800px;
+      padding: 10px;
+      margin-left: 50px;
+
+      h2 {
+        font-family: var(--text-font-1);
+        font-size: 3.2rem;
+        color: var(--text-clr);
+      }
+      p {
+        color: var(--text-clr);
+        font-size: 1rem;
+        font-family: var(--text-font-1);
+
+        strong {
+          font-style: italic;
+        }
+        a {
+          color: var(--sub-header-clr);
+          text-decoration: none;
+        }
+      }
+
+      button {
+        border: 1px ridge #333;
+        border-radius: 3rem;
+        padding: 10px 20px;
+        color: var(--btn-text-clr);
+        background-color: var(--btn-bg-clr);
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        margin-top: 1.3rem;
+        cursor: pointer;
+      }
+    }
+
+    div.img_control {
+      width: 30%;
+      padding-top: 50px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  div.mid_section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    div.content {
+      width: 75%;
+      padding-inline: auto;
+      padding-top: 30px;
+
+      h4 {
+        font-family: var(--text-font-1);
+        font-size: 2rem;
+        color: var(--sub-bg-clr);
+        font-weight: 600;
+      }
+
+      p {
+        color: #333;
+        font-size: 1rem;
+        font-family: var(--text-font-1);
+      }
+
+      dl {
+        margin-top: 20px;
+        width: 90%;
+        dt {
+          text-decoration: underline;
+          font-family: var(--text-font-1);
+          font-size: 1.4rem;
+          color: #333;
+          font-weight: 600;
+        }
+        dd {
+          font-family: var(--text-font-1);
+          font-size: 1rem;
+          color: #333;
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    aside {
+      background-color: var(--sub-bg-clr);
+      width: 30%;
+      padding: 20px;
+
+      div {
+        text-align: center;
+        h4 {
+          font-family: var(--text-font-1);
+          font-size: 2rem;
+          color: var(--text-clr);
+          font-weight: 600;
+        }
+        p {
+          color: var(--text-clr);
+          font-size: 1rem;
+          font-family: var(--text-font-1);
+        }
+      }
+    }
+  }
+}

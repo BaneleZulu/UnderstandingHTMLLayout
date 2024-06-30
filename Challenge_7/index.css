@@ -1,0 +1,133 @@
+:root {
+  --text-font-1: "M PLUS 1 Code", monospace;
+  --header-text-font: "Lobster", sans-serif;
+  --header-txt: "Playfair", monospace;
+  --header-bg-clr: #f3eed9;
+  --header-txt-clr: #824936;
+  --section-bg-clr1: #222c2a;
+  --section-txt-clr: #f3eed9;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  header {
+    background-color: var(--header-bg-clr);
+    color: var(--header-txt-clr);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--header-txt);
+
+    div {
+      width: 55%;
+      padding: 10px;
+      margin-inline: auto;
+      text-align: center;
+
+      h4 {
+        font-family: var(--header-text-font);
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--header-txt-clr);
+        margin-bottom: 0;
+      }
+      h1 {
+        font-family: var(--header-text-font);
+        font-size: 4.5rem;
+        font-weight: 900;
+        color: var(--header-txt-clr);
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  article {
+    background-color: #fff;
+    margin-block: 70px;
+
+    h2 {
+      font-family: var(--header-text-font);
+      color: var(--header-txt-clr);
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    div.mid_section {
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+
+      div {
+        width: 40%;
+        padding: 10px;
+        font-size: 1rem;
+        font-family: var(--text-font-1);
+      }
+    }
+  }
+
+  div.bottom_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    section.section_1 {
+      background-color: var(--section-bg-clr1);
+    }
+    section.section_2 {
+      background-color: var(--header-txt-clr);
+    }
+
+    section {
+      padding-block: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+      color: #eee;
+
+      div.info {
+        width: 50%;
+        padding: 10px;
+        font-family: var(--text-font-1);
+      }
+      div {
+        width: 30%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    header {
+      width: 100%;
+    }
+    article {
+      width: 100%;
+      div.mid_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    div.bottom_section {
+      section.section_1,
+      section.section_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
